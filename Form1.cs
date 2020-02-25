@@ -16,5 +16,28 @@ namespace UP04
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        { 
+
+                if (textBox1.Text == "admin" && textBox2.Text == "55555")
+
+                {
+                    menu m = new menu();
+                    m.Show();
+
+                    this.Hide();
+                }
+                else
+                {
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+
+                    MessageBox.Show("Неправильный логин или пароль");
+                }
+            }
+        }
     }
-}
+
+    
+
